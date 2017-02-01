@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.m.loginapp.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="23dp"
+                android:minHeight="10dp"
+                />
+
+            <TextView
+                android:text="Hasło:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/_textTitlePassword"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberPassword"
+                android:ems="10"
+                android:id="@+id/_editPassword"/>
+
+            <Switch
+                android:text="Włącz Blokadę"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:id="@+id/_switchLock"
+                android:checked="false"
+                android:cursorVisible="false"
+                android:contextClickable="false"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="49dp"/>
+
+            <TextView
+                android:text="E-mail Alarmowy:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/_textTitleEmail"
+                android:editable="false"
+                android:textAlignment="textStart"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:ems="10"
+                android:id="@+id/_editEmail"
+                android:elevation="1dp"
+                android:textAlignment="center"/>
+
+            <Switch
+                android:text="Wyślij e-mail na podany adres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/_switchSendEmail"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
